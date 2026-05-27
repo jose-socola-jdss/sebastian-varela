@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Sebastián Varela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Didact+Gothic&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <header class="main-header" style="position: sticky; background: var(--bg); border-bottom: 1px solid rgba(0,0,0,0.05);">
+    <div class="container header-inner" style="padding: 1.5rem 0;">
+      <a href="index.html" class="logo">Sebastián Varela</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="reveal-item page-banner" style="background:#fff; color:var(--text); border-bottom: 1px solid rgba(0,0,0,0.05);">
+    <div class="container">
+      <h1 style="color:var(--primary);">Hablemos de tu idea</h1>
+      <p style="color:var(--secondary);">Ponte en contacto para cotizar proyectos editoriales, corporativos o compras de obras.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="minimal-form">
+        <form id="contact-form">
+          <div class="form-group-minimal">
+            <input type="text" id="nombre" required placeholder="Nombre Completo">
+          </div>
+          <div class="form-group-minimal">
+            <input type="email" id="email" required placeholder="Correo Electrónico">
+          </div>
+          <div class="form-group-minimal">
+            <textarea id="mensaje" rows="4" required placeholder="Detalles del proyecto o consulta..."></textarea>
+          </div>
+          <button type="submit" class="btn-minimal">Enviar Consulta</button>
+        </form>
+
+        <div class="contact-info-minimal">
+          <p>Santiago de Chile · taller@sebastianvarela.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Light -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>Sebastián Varela</h3>
+        <p>Galería Fotográfica Fine Art</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sebastián Varela | Fotografía Artística</title>
+  <meta name="description" content="La poesía de la luz. Fotografía documental, fine art y retrato comercial en Santiago.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Didact+Gothic&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Sebastián Varela</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="reveal-item hero">
+    <div class="container">
+      <h1>La poesía de la luz</h1>
+      <p>Fotografía Fine Art · Retrato Documental · Comercial</p>
+    </div>
+  </section>
+
+  <div class="line-sep"></div>
+
+  <!-- Gallery Section -->
+  <section class="reveal-item section">
+    <div class="container">
+      <h2 class="section-title">Galería / Obras</h2>
+      
+      <div class="gallery-grid">
+        <article class="gallery-item" data-title="✦ Retrato Fine Art, Serie Silencio (2023)" data-desc="Hasselblad 500C · 80mm · f/4 · Tri-X 400">
+          <div class="gallery-overlay"><i data-lucide="plus"></i></div>
+        </article>
+
+        <article class="gallery-item gallery-item-2" data-title="✦ Paisaje Documental, Desierto de Atacama (2024)" data-desc="Leica M6 · 35mm · f/8 · Portra 160">
+          <div class="gallery-overlay"><i data-lucide="plus"></i></div>
+        </article>
+
+        <article class="gallery-item gallery-item-3" data-title="✦ Arquitectura Minimalista, Serie Líneas (2023)" data-desc="Sony A7R V · 24-70mm f/2.8 · f/11 · ISO 100">
+          <div class="gallery-overlay"><i data-lucide="plus"></i></div>
+        </article>
+
+        <article class="gallery-item gallery-item-4" data-title="✦ Composición Conceptual, Serie Sombras (2022)" data-desc="Mamiya RZ67 · 110mm · f/2.8 · Ilford HP5+">
+          <div class="gallery-overlay"><i data-lucide="plus"></i></div>
+        </article>
+
+        <article class="gallery-item gallery-item-5" data-title="✦ Retrato Editorial, Serie Miradas (2023)" data-desc="Canon EOS R5 · 50mm f/1.2 · f/1.2 · ISO 200">
+          <div class="gallery-overlay"><i data-lucide="plus"></i></div>
+        </article>
+
+        <article class="gallery-item gallery-item-6" data-title="✦ Naturaleza Muerta, Serie Texturas (2024)" data-desc="Nikon FM2 · 50mm · f/2 · Kodak Gold 200">
+          <div class="gallery-overlay"><i data-lucide="plus"></i></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Overlay -->
+  <div class="lightbox-modal">
+    <div class="lightbox-content">
+      <button class="lightbox-close">&times;</button>
+      <span>Retrato Fine Art (2023)</span>
+    </div>
+  </div>
+
+  <div class="line-sep"></div>
+
+  <!-- About Me -->
+  <section class="reveal-item section">
+    <div class="container about-me-split">
+      <div class="about-text">
+        <h2 style="text-align: left; margin-bottom: 2rem;">El Ojo Detrás de la Cámara</h2>
+        <p>Sebastián Varela es un fotógrafo chileno formado en artes visuales. Su obra explora los límites entre la luz natural y la sombra, capturando la quietud y la melancolía de los espacios cotidianos y la fuerza expresiva del retrato documental.</p>
+      </div>
+      <div class="about-quote">
+        "No tomamos fotografías únicamente con la cámara. Llevamos al acto fotográfico todos los libros que hemos leído, las películas que hemos visto y las personas que hemos amado."
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Light -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>Sebastián Varela</h3>
+        <p>Galería Fotográfica Fine Art</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Full-Screen Art Lightbox Modal -->
+  <div id="art-lightbox" class="art-lightbox-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:2000; align-items:center; justify-content:center; flex-direction:column; color:#FFF; font-family:var(--font-body);">
+    <span class="lightbox-close" style="position:absolute; top:2rem; right:2rem; font-size:3rem; cursor:pointer; font-weight:300;">&times;</span>
+    <img id="lightbox-img" src="" alt="Fine Art Preview" style="max-width:85%; max-height:75%; border:1px solid rgba(255,255,255,0.15); box-shadow:0 0 40px rgba(0,0,0,0.8);">
+    <h3 id="lightbox-title" style="margin-top:1.5rem; font-family:var(--font-display); font-size:1.8rem; text-transform:uppercase; letter-spacing:2px;">Obra</h3>
+    <p id="lightbox-desc" style="color:#888; font-size:1.1rem; margin-top:0.5rem; font-style:italic;">Configuración fotográfica</p>
+  </div>
+</body>
+</html>

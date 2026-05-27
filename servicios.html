@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios Fotográficos | Sebastián Varela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Didact+Gothic&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="preloader-spinner"></div></div>
+
+
+  <!-- Navigation -->
+  <header class="main-header" style="position: sticky; background: var(--bg); border-bottom: 1px solid rgba(0,0,0,0.05);">
+    <div class="container header-inner" style="padding: 1.5rem 0;">
+      <a href="index.html" class="logo">Sebastián Varela</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="reveal-item page-banner" style="background:#fff; color:var(--text); border-bottom: 1px solid rgba(0,0,0,0.05);">
+    <div class="container">
+      <h1 style="color:var(--primary);">Servicios Profesionales</h1>
+      <p style="color:var(--secondary);">Fotografía artística y de autor adaptada a publicaciones editoriales y coleccionismo.</p>
+    </div>
+  </section>
+
+  <!-- Services list separated by lines -->
+  <section class="reveal-item section">
+    <div class="container">
+      <div class="service-row">
+        <h3>Sesiones Editoriales & Retrato</h3>
+        <div class="service-row-desc">
+          <span>Retratos de autor para escritores, músicos, artistas y perfiles editoriales corporativos.</span>
+          <i data-lucide="camera"></i>
+        </div>
+      </div>
+      
+      <div class="service-row">
+        <h3>Fotografía de Arquitectura & Espacios</h3>
+        <div class="service-row-desc">
+          <span>Registro visual de obras arquitectónicas, diseño de interiores y hotelería de lujo con énfasis en la luz natural.</span>
+          <i data-lucide="image"></i>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <h3>Venta de Copias Fine Art</h3>
+        <div class="service-row-desc">
+          <span>Impresiones artísticas de edición limitada numeradas y firmadas por el autor en papel de algodón de conservación.</span>
+          <i data-lucide="award"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Light -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h3>Sebastián Varela</h3>
+        <p>Galería Fotográfica Fine Art</p>
+      </div>
+      <div class="footer-dev">
+        <span>Desarrollado por</span>
+        <a href="../index.html" class="footer-logo-link" aria-label="Ir a Blyp">
+          <img src="../blyp_logotipo.svg" alt="Blyp Logo" class="footer-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
